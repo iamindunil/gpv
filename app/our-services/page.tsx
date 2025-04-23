@@ -415,8 +415,8 @@ export default function Services() {
                       objectFit="contain"
                     />
                   </div>
-                  <p className="text-xs text-center font-medium">
-                    {service.title.split(" ")[0]}
+                  <p className="text-xs w-18 text-center justify-center items-center">
+                    {service.title}
                   </p>
                 </div>
               ))}
