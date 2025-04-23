@@ -20,7 +20,7 @@ export default function AboutUs() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col sm:flex-row items-center justify-center sm:text-left text-center sm:space-x-10 gap-y-8">
               <div className="w-full sm:w-1/2  ">
-                <Image src={heroImg} alt="About Us" className="mx-auto aspect-square overflow-hidden rounded-xl object-cover object-center sm:w-full md:h-96 " />
+                <Image src={heroImg} alt="About Us" className="mx-auto overflow-hidden rounded-xl object-cover object-center sm:w-full md:h-96 " />
               </div>
               <div className="w-full sm:w-1/2">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-black mb-6">

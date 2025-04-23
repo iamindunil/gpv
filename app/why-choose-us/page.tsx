@@ -67,7 +67,7 @@ export default function WhyChooseUs() {
           <div className="container px-4 md:px-14">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex items-center justify-center">
-                <Image src={heroImg} alt="Team collaboration" className="mx-auto aspect-square overflow-hidden rounded-xl object-cover object-center sm:w-full md:h-96 " />
+                <Image src={heroImg} alt="Team collaboration" className="mx-auto overflow-hidden rounded-xl object-cover object-center sm:w-full md:h-96 " />
               </div>
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
