@@ -9,7 +9,7 @@ export function Footer() {
             {/* Company Info */}
             <div className="text-center md:text-left">
               <h3 className="text-lg font-semibold text-white mb-4">Logo</h3>
-              <p className="text-sm mb-4">Empowering your digital journey<br/> with Global Pearl Ventures<br/><br/> – Where innovation meets
+              <p className="text-sm mb-4">Empowering your digital journey<br/> with Global Pearl Ventures<br/> – Where innovation meets
               excellence.</p>
               <div className="flex space-x-4 justify-center md:justify-start">
                 <Link href="#" className="text-gray-400 hover:text-white">
