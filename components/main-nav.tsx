@@ -25,12 +25,14 @@ export function MainNav() {
     { href: "/why-choose-us", label: "Why Choose Us?" },
   ];
 
+  const image = '/Logo-V6.png';
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-gradient-to-b from-blue-50 via-emerald-50 to-white">
       <div className="container flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
           <img
-            src="/Logo-V6.png"
+            src={image}
             alt="logo"
             className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-18 lg:w-18"
           />
