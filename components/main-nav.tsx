@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { useMobile } from "@/hooks/use-mobile";
+import Image from "next/image";
 
 export function MainNav() {
   const pathname = usePathname();
@@ -28,7 +29,7 @@ export function MainNav() {
     <header className="sticky top-0 z-50 w-full border-b bg-gradient-to-b from-blue-50 via-emerald-50 to-white">
       <div className="container flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-xl font-bold text-blue-600"><img src="logo.png" alt="logo" /></span>
+          <span className="text-xl font-bold text-blue-600"><Image src="logo.png" alt="logo" /></span>
         </Link>
         {isMobile ? (
           <>
