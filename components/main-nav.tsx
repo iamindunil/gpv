@@ -29,14 +29,14 @@ export function MainNav() {
     <header className="sticky top-0 z-50 w-full border-b bg-gradient-to-b from-blue-50 via-emerald-50 to-white">
       <div className="container flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
-          <Image
+          <img
             src="/Logo V6.png"
             alt="logo"
-            width={250}
-            height={250}
-            className="h-10 w-auto w-50 h-50"
+            className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-18 lg:w-18"
           />
         </Link>
+
+
         {isMobile ? (
           <>
             <Button
