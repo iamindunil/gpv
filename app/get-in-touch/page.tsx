@@ -23,8 +23,8 @@ export default function Home() {
 
   const handleSubmit = (e:any) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    //todo: handle form submission logic 
+    const mailtoLink = `mailto:info@globalpearlventures.com?subject=Contact%20Form%20Submission&body=Name:%20${encodeURIComponent(formData.name)}%0AEmail:%20${encodeURIComponent(formData.email)}%0AContact%20No:%20${encodeURIComponent(formData.contactNo)}%0AOrganization:%20${encodeURIComponent(formData.organization)}%0AMessage:%20${encodeURIComponent(formData.message)}`;
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -121,7 +121,7 @@ export default function Home() {
             
             <div className="text-center">
             <Link href="/get-in-touch">
-              <Button className="bg-blue-600 hover:bg-blue-700 w-24 h-10">
+              <Button className="bg-blue-600 hover:bg-blue-700 w-24 h-10" onClick={handleSubmit}>
                 Send
               </Button>
             </Link>
