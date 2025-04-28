@@ -29,7 +29,8 @@ export function MainNav() {
     <header className="sticky top-0 z-50 w-full border-b bg-gradient-to-b from-blue-50 via-emerald-50 to-white">
       <div className="container flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
-          <img src="/logo.png" alt="logo" />
+          <Image src="/logo.png" alt="logo" width={
+            200} height={50} className="h-10 w-auto" />
         </Link>
         {isMobile ? (
           <>
