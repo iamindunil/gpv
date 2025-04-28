@@ -36,7 +36,6 @@ export function MainNav() {
           />
         </Link>
 
-
         {isMobile ? (
           <>
             <Button

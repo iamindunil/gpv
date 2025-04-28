@@ -7,13 +7,16 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="justify-center md:text-left">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+            <div className="flex flex-row">
             <img
               src="/Logo V6.png"
               alt="logo"
               className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-18 lg:w-18"
             />
-            <p className="text-sm mb-4">Empowering your digital journey<br /> with Global Pearl Ventures<br /> – Where innovation meets
+            </div>
+            
+            <p className="text-sm mb-4"><br /> Empowering your digital journey<br /> with Global Pearl Ventures<br /> – Where innovation meets
               excellence.</p>
             <div className="flex space-x-4 justify-center md:justify-start">
               <Link href="#" className="text-gray-400 hover:text-white">
