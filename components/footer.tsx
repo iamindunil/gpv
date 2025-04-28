@@ -7,16 +7,16 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
-          <div className="flex flex-row items-center">
-  <img
-    src="/Logo-v6.png"
-    alt="logo"
-    className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-18 lg:w-18"
-  />
-  <span className="ml-4 mt-2 text-2xl font-bold">GPV</span>
-</div>
+            <div className="flex flex-row items-center">
+              <img
+                src="/Logo-v6.png"
+                alt="logo"
+                className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-18 lg:w-18"
+              />
+              <span className="ml-4 mt-2 text-2xl font-bold">GPV</span>
+            </div>
 
-            
+
             <p className="text-sm mb-4"><br /> Empowering your digital journey<br /> with Global Pearl Ventures<br /> – Where innovation meets
               excellence.</p>
             <div className="flex space-x-4 justify-center md:justify-start">
@@ -26,8 +26,8 @@ export function Footer() {
                 </svg>
               </Link>
               <Link href="#" className="text-gray-400 hover:text-white">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M13.3174 10.7749L19.1457 4H17.7646L12.7235 9.88256L8.66986 4H4L10.1294 12.8955L4 20H5.38119L10.7222 13.7878L14.998 20H19.6679L13.3174 10.7749ZM11.3961 12.9738L10.7726 12.0881L5.95568 5.02193H8.0045L11.7491 10.5547L12.3726 11.4403L17.3999 18.9671H15.3509L11.3961 12.9738Z" fill="currentColor" />
                 </svg>
               </Link>
               <Link href="#" className="text-gray-400 hover:text-white">
