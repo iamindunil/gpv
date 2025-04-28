@@ -17,7 +17,7 @@ const ContactBox = () => {
             href="/get-in-touch"
             className="inline-block bg-white text-[#0371BC] font-medium text-lg px-6 py-3 rounded-md hover:opacity-90 transition"
           >
-            Contact Us &gt;
+            Contact Us
           </Link>
           <Link
             href="/our-services"

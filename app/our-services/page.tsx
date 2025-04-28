@@ -3,6 +3,8 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import ContactBox from "@/components/contactBox";
+import Link from "next/link";
+
 
 interface ServiceDetailProps {
   title: string;
@@ -496,8 +498,25 @@ export default function Services() {
         ))}
       </div>
 
-      {/* Contact Box */}
-      <ContactBox />
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-10xl mx-auto text-center bg-gradient-to-r from-[#0371BC] to-[#128DBB] rounded-2xl p-8 sm:p-12">
+        <h2 className="text-3xl sm:text-4xl font-bold text-white leading-snug mb-4">
+          Ready to Transform Your Business?
+        </h2>
+        <p className="text-lg sm:text-xl text-white leading-relaxed mb-8">
+          Let&apos;s discuss how our software solutions can help you achieve your business goals and<br />
+          drive innovation.
+        </p>
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <Link
+            href="/get-in-touch"
+            className="inline-block bg-white text-[#0371BC] font-medium text-lg px-6 py-3 rounded-md hover:opacity-90 transition"
+          >
+            Contact Us
+          </Link>
+        </div>
+      </div>
+    </section>
 
       {/* CSS for scrolling behavior */}
       <style jsx global>{`
