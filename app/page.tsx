@@ -98,7 +98,7 @@ export default function Home() {
               <img
                 src="/Team collaboration.svg"
                 alt="Team collaboration"
-                className="mx-auto aspect-square overflow-hidden rounded-xl md:rounded-none object-cover object-center sm:w-full md:w-10/12 md:h-96"
+                className="mx-auto overflow-hidden rounded-xl md:rounded-none object-cover object-center sm:w-full md:w-10/12 md:h-96"
               />
             </div>
             <div className="flex flex-col justify-center space-y-4">

@@ -25,7 +25,7 @@ export function MainNav() {
     { href: "/why-choose-us", label: "Why Choose Us?" },
   ];
 
-  const image = '/Logo-v6.png';
+  const image = '/Logo-v7.png';
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-gradient-to-b from-blue-50 via-emerald-50 to-white">
@@ -34,7 +34,7 @@ export function MainNav() {
           <img
             src={image}
             alt="logo"
-            className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-18 lg:w-18"
+            className="h-10 w-10 sm:h-14 sm:w-14 md:h-12 md:w-12 lg:h-12 lg:w-12"
           />
         </Link>
 
