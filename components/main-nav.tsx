@@ -32,11 +32,10 @@ export function MainNav() {
           <Image
             src="/Logo V6.png"
             alt="logo"
-            width={200}
-            height={50}
-            className="h-10 w-auto"
+            width={250}
+            height={250}
+            className="h-10 w-auto w-50 h-50"
           />
-
         </Link>
         {isMobile ? (
           <>
