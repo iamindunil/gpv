@@ -11,6 +11,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "GPV",
   description: "We build cutting-edge software that transforms ideas into powerful digital experiences.",
+  favicon: "/Logo V6.png",
 }
 
 export default function RootLayout({
