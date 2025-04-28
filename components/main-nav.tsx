@@ -30,7 +30,7 @@ export function MainNav() {
       <div className="container flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
           <img
-            src="/Logo V6.png"
+            src="/Logo-V6.png"
             alt="logo"
             className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-18 lg:w-18"
           />

@@ -10,7 +10,7 @@ export function Footer() {
           <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <div className="flex flex-row">
             <img
-              src="/Logo V6.png"
+              src="/Logo-v6.png"
               alt="logo"
               className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-18 lg:w-18"
             />
