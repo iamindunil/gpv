@@ -3,12 +3,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { useMobile } from "@/hooks/use-mobile";
 import { CrossIcon } from "./cross";
 import { HamburgerMenu } from "./hamburger";
+import { cn } from "@/lib/utils";
 
 export function MainNav() {
   const pathname = usePathname();
@@ -30,8 +29,9 @@ export function MainNav() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-gradient-to-b from-blue-50 via-emerald-50 to-white">
-      <div className="container flex h-20 items-center justify-between">
-        <div className="px-4 md:px-6">
+      <div className="container flex h-20 items-center justify-between px-0 md:px-0">
+        {/* Logo section - remove horizontal padding */}
+        <div className="p-4">
           <Link href="/" className="flex items-center">
             <img
               src={image}
@@ -41,6 +41,7 @@ export function MainNav() {
           </Link>
         </div>
 
+        {/* Mobile view */}
         {isMobile ? (
           <>
             <Button 
@@ -86,7 +87,7 @@ export function MainNav() {
             )}
           </>
         ) : (
-          <nav className="flex items-center gap-6 px-4 md:px-6">
+          <nav className="flex items-center gap-6 px-0 md:px-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
