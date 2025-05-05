@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link"
 import { ArrowRight, Brain, Code, Database, Globe, Layers, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -8,16 +9,43 @@ import { ContactForm } from "@/components/contact-form"
 import BackgroundAnimation from "@/components/BackgroundAnimation"
 import Image from "next/image"
 import ContactBox from "@/components/contactBox"
+import { useEffect, useState } from "react"
+
+const images = [
+  "/about_us_hero.png",
+  "/ai_ml.png",
+  "/cloud_and_devops.png",
+]
 
 
 export default function Home() {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev: any) => (prev + 1) % images.length);
+    }, 5000); // 5s delay
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="flex flex-col min-h-scree">
-      
+
 
       {/* Services Section */}
-      <section className="w-full py-2 md:py-3 lg:py-24 bg-white" id="services">
-        <div className="container px-4 md:px-6">
+      <section
+        className="w-full py-2 md:py-3 lg:py-24 bg-cover bg-center transition-all duration-1000 ease-in-out"
+        id="services"
+        style={{
+          backgroundImage: `url(${images[currentImage]})`,
+        }}
+      >
+        {/* Blur Overlay */}
+        <div className="absolute md-h-120px lg-h-140px inset-0 bg-white/30 backdrop-blur-sm z-0" />
+
+        {/* Main content (above overlay) */}
+        <div className="relative z-10 container px-4 md:px-6 py-8">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-blue-900">
@@ -28,6 +56,7 @@ export default function Home() {
               </p>
             </div>
           </div>
+
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-12">
             <ServiceCard
               icon={<Globe className="h-10 w-10 text-blue-600" />}
@@ -45,16 +74,18 @@ export default function Home() {
               description="Intelligent automation and data-driven insights."
             />
           </div>
-          <div className="flex justify-center mt-5 md:mt-7 ">
+
+          <div className="flex justify-center mt-5 md:mt-7">
             <Link href="/our-services">
               <Button variant="outline" className="bg-blue-600 hover:bg-blue-700 hover:text-white text-white">
                 Explore
-                <ArrowRight className=" h-4 w-4" />
+                <ArrowRight className="h-4 w-4 ml-2" />
               </Button>
             </Link>
           </div>
         </div>
       </section>
+
 
       {/* Why Choose Us Section */}
       <section className="w-full py-12 md:py-12 lg:py-12 bg-blue-50 mt-3">
@@ -62,7 +93,7 @@ export default function Home() {
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
             <div className="flex items-center justify-center">
               <img
-                src="/Team collaboration.svg"
+                src="/Team collaboration.png"
                 alt="Team collaboration"
                 className="mx-auto overflow-hidden rounded-xl md:rounded-none object-cover object-center sm:w-full md:w-10/12 md:h-96"
               />
@@ -82,7 +113,7 @@ export default function Home() {
                 <li className="flex items-center gap-2">
                   <div className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-100">
                     <Image
-                      src="/ex.svg"
+                      src="/ex.png"
                       alt="Team collaboration"
                       width={32}
                       height={32}
@@ -95,7 +126,7 @@ export default function Home() {
                 <li className="flex items-center gap-2">
                   <div className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-100">
                     <Image
-                      src="/cc.svg"
+                      src="/cc.png"
                       alt="Client-Centric Approach"
                       width={34}
                       height={34}
@@ -108,7 +139,7 @@ export default function Home() {
                 <li className="flex items-center gap-2">
                   <div className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-100">
                     <Image
-                      src="/ino.svg"
+                      src="/ino.png"
                       alt="Innovation-Driven"
                       width={34}
                       height={34}
@@ -121,7 +152,7 @@ export default function Home() {
                 <li className="flex items-center gap-2">
                   <div className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-100">
                     <Image
-                      src="/gr.svg"
+                      src="/gr.png"
                       alt="Innovation-Driven"
                       width={34}
                       height={34}
@@ -147,7 +178,7 @@ export default function Home() {
       </section>
 
       {/* Hero Section */}
-      
+
       <section className="relative z-10 w-full py-14 md:py-40 bg-gradient-to-b from-blue-50 to-white">
         <BackgroundAnimation />
         <div className="container px-4 md:px-6">
@@ -177,7 +208,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center justify-center">
-          </div>
+            </div>
           </div>
         </div>
       </section>

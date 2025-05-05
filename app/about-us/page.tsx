@@ -4,11 +4,11 @@ import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { TeamMember } from "@/components/team-member"
 
-import heroImg from "../../public/about_us_hero.svg"
-import innovationImg from "../../public/i.svg"
-import reliableImg from "../../public/rs.svg"
-import scalableImg from "../../public/ss.svg"
-import transformativeImg from "../../public/ts.svg"
+import heroImg from "../../public/about_us_hero.png"
+import innovationImg from "../../public/i.png"
+import reliableImg from "../../public/rs.png"
+import scalableImg from "../../public/ss.png"
+import transformativeImg from "../../public/ts.png"
 import ContactBox from "@/components/contactBox"
 
 export default function AboutUs() {

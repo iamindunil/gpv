@@ -11,7 +11,7 @@ export function TeamMember({ name, role, bio, imageUrl }: TeamMemberProps) {
   return (
     <div className="flex flex-col items-center space-y-4 rounded-lg border border-blue-100 bg-white p-6 text-center shadow-sm">
       <div className="relative h-32 w-32 overflow-hidden rounded-full">
-        <Image src={imageUrl || "/placeholder.svg"} alt={name} width={128} height={128} className="object-cover" />
+        <Image src={imageUrl || "/placeholder.png"} alt={name} width={128} height={128} className="object-cover" />
       </div>
       <div className="space-y-1">
         <h3 className="text-xl font-bold text-blue-900">{name}</h3>

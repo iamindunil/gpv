@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import ContactBox from "@/components/contactBox";
 import Link from "next/link";
 
 
@@ -208,7 +207,7 @@ export default function Services() {
         "Web application development",
         "API development and integration",
       ],
-      image: "web_dev.svg",
+      image: "web_dev.png",
     },
     {
       id: "mobile-dev",
@@ -224,7 +223,7 @@ export default function Services() {
         "App maintenance and support",
         "App store optimization",
       ],
-      image: "mobile_app_dev.svg",
+      image: "mobile_app_dev.png",
     },
     {
       id: "custom-software",
@@ -240,7 +239,7 @@ export default function Services() {
         "Software maintenance & support",
         "Agile development methodologies",
       ],
-      image: "custom_se.svg",
+      image: "custom_se.png",
     },
     {
       id: "cloud-devops",
@@ -256,7 +255,7 @@ export default function Services() {
         "Containerization & orchestration",
         "DevOps automation",
       ],
-      image: "cloud_and_devops.svg",
+      image: "cloud_and_devops.png",
     },
     {
       id: "ai-ml",
@@ -272,7 +271,7 @@ export default function Services() {
         "AI integration services",
         "Data analytics solutions",
       ],
-      image: "ai_ml.svg",
+      image: "ai_ml.png",
     },
     {
       id: "cybersecurity",
@@ -288,7 +287,7 @@ export default function Services() {
         "Incident response planning",
         "Security training & awareness",
       ],
-      image: "cybersecurity.svg",
+      image: "cybersecurity.png",
     },
     {
       id: "consulting",
@@ -304,7 +303,7 @@ export default function Services() {
         "Change management",
         "Digital maturity assessment",
       ],
-      image: "it.svg",
+      image: "it.png",
     },
     {
       id: "uiux",
@@ -320,7 +319,7 @@ export default function Services() {
         "Responsive design",
         "Design systems development",
       ],
-      image: "/ui_ux.svg",
+      image: "/ui_ux.png",
     },
     {
       id: "big-data",
@@ -336,7 +335,7 @@ export default function Services() {
         "Real-time analytics",
         "Data governance strategy",
       ],
-      image: "big_data.svg",
+      image: "big_data.png",
     },
   ];
 
@@ -411,7 +410,7 @@ export default function Services() {
                 >
                   <div className="w-16 h-16 relative mx-auto mb-2">
                     <Image
-                      src={`${service.id}-icon.svg`}
+                      src={`${service.id}-icon.png`}
                       alt={service.title}
                       layout="fill"
                       objectFit="contain"
@@ -441,7 +440,7 @@ export default function Services() {
                 >
                   <div className="w-20 h-20 md:w-12 md:h-12 relative mx-auto mb-2 gap-4">
                     <Image
-                      src={`${service.id}-icon.svg`}
+                      src={`${service.id}-icon.png`}
                       alt={service.title}
                       layout="fill"
                       objectFit="contain"
