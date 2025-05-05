@@ -7,7 +7,6 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { useMobile } from "@/hooks/use-mobile";
-import Image from "next/image";
 import { CrossIcon } from "./cross";
 import { HamburgerMenu } from "./hamburger";
 
@@ -31,14 +30,16 @@ export function MainNav() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-gradient-to-b from-blue-50 via-emerald-50 to-white">
-      <div className="container flex h-20 items-center justify-between px-4">
-        <Link href="/" className="flex items-center space-x-2">
-          <img
-            src={image}
-            alt="logo"
-            className="h-14 w-14 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-16 lg:w-16"
-          />
-        </Link>
+      <div className="container flex h-20 items-center justify-between">
+        <div className="px-4 md:px-6">
+          <Link href="/" className="flex items-center">
+            <img
+              src={image}
+              alt="logo"
+              className="h-14 w-14 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-16 lg:w-16"
+            />
+          </Link>
+        </div>
 
         {isMobile ? (
           <>
@@ -85,7 +86,7 @@ export function MainNav() {
             )}
           </>
         ) : (
-          <nav className="flex items-center gap-6">
+          <nav className="flex items-center gap-6 px-4 md:px-6">
             {navItems.map((item) => (
               <Link
                 key={item.href}
