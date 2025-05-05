@@ -35,51 +35,52 @@ export default function Home() {
 
       {/* Services Section */}
       <section
-        className="w-full py-2 md:py-3 lg:py-24 bg-cover bg-center transition-all duration-1000 ease-in-out"
+        className="w-full py-8 sm:py-12 md:py-16 lg:py-24 bg-cover bg-center transition-all duration-1000 ease-in-out relative"
         id="services"
         style={{
           backgroundImage: `url(${images[currentImage]})`,
         }}
       >
         {/* Blur Overlay */}
-        <div className="absolute md-h-120px lg-h-140px inset-0 bg-white/30 backdrop-blur-sm z-0" />
+        <div className="absolute inset-0 bg-white/30 backdrop-blur-sm z-0" />
 
         {/* Main content (above overlay) */}
-        <div className="relative z-10 container px-4 md:px-6 py-8">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-blue-900">
+            <div className="space-y-2 sm:space-y-3 md:space-y-4">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-blue-900">
                 Comprehensive Software Solutions
               </h2>
-              <p className="max-w-[900px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[900px] mx-auto text-sm sm:text-base md:text-lg lg:text-xl text-gray-600">
                 We offer a wide range of services to help your business succeed in the digital world.
               </p>
             </div>
           </div>
 
-          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-12">
+          <div className="mx-auto grid grid-cols-1 gap-4 sm:gap-6 mt-8 sm:mt-10 md:mt-12 max-w-sm sm:max-w-none sm:grid-cols-2 lg:grid-cols-3">
             <ServiceCard
-              icon={<Globe className="h-10 w-10 text-blue-600" />}
+              icon={<Globe className="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 text-blue-600" />}
               title="Web Development"
               description="Custom websites and web applications built with the latest technologies."
             />
             <ServiceCard
-              icon={<Layers className="h-10 w-10 text-blue-600" />}
+              icon={<Layers className="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 text-blue-600" />}
               title="Mobile Apps"
               description="Native and cross-platform mobile applications for iOS and Android."
             />
             <ServiceCard
-              icon={<Brain className="h-10 w-10 text-blue-600" />}
+              icon={<Brain className="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 text-blue-600" />}
               title="AI & Machine Learning"
               description="Intelligent automation and data-driven insights."
+              className="sm:col-span-2 lg:col-span-1 sm:max-w-md sm:mx-auto lg:max-w-none"
             />
           </div>
 
-          <div className="flex justify-center mt-5 md:mt-7">
+          <div className="flex justify-center mt-6 sm:mt-8 md:mt-10">
             <Link href="/our-services">
-              <Button variant="outline" className="bg-blue-600 hover:bg-blue-700 hover:text-white text-white">
+              <Button variant="outline" className="bg-blue-600 hover:bg-blue-700 hover:text-white text-white text-sm sm:text-base py-2 px-4 sm:py-2.5 sm:px-5">
                 Explore
-                <ArrowRight className="h-4 w-4 ml-2" />
+                <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4 ml-1.5 sm:ml-2" />
               </Button>
             </Link>
           </div>
