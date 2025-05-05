@@ -43,7 +43,7 @@ export default function Home() {
         }}
       >
         {/* Blur Overlay */}
-        <div className="absolute inset-0 bg-blue/50 backdrop-blur-sm z-0" />
+        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm z-0" />
 
         {/* Main content (above overlay) */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,7 +73,6 @@ export default function Home() {
               icon={<Brain className="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 text-blue-600" />}
               title="AI & Machine Learning"
               description="Intelligent automation and data-driven insights."
-              className="sm:col-span-2 lg:col-span-1 sm:max-w-md sm:mx-auto lg:max-w-none"
             />
           </div>
 
@@ -184,18 +183,20 @@ export default function Home() {
       <section className="relative z-10 w-full py-14 md:py-40 bg-gradient-to-b from-blue-50 to-white">
         <BackgroundAnimation />
         <div className="container px-4 md:px-6">
-          <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-4xl lg:text-5xl/2 xl:text-5xl/none   text-black">
-                  Innovating Tommorrow, Today !
+          <div className="flex justify-center">
+            <div className="flex flex-col items-center space-y-4 text-center">
+              <div className="space-y-4">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-4xl lg:text-5xl/2 xl:text-5xl/none text-black">
+                  Innovating Tomorrow, Today!
                 </h1>
                 <p className="max-w-[600px] text-gray-600 md:text-xl">
                   Empowering your digital journey with Global Pearl Ventures<br />
                   Where Innovation meets Excellence.
                 </p>
               </div>
-              <div className="flex flex-col-2 gap-4 min-[400px]:flex-row">
+
+              {/* ✅ Fixed Buttons Layout */}
+              <div className="flex flex-col gap-4 sm:flex-row justify-center">
                 <Link href="/get-in-touch">
                   <Button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-teal-700 text-white transition-colors duration-300 ease-in-out">
                     Get Started
@@ -203,17 +204,19 @@ export default function Home() {
                   </Button>
                 </Link>
                 <Link href="/our-services">
-                  <Button variant="outline" className="border-blue-200 text-blue-600 transition-colors duration-300 ease-in-out">
+                  <Button
+                    variant="outline"
+                    className="border-blue-200 text-blue-600 transition-colors duration-300 ease-in-out"
+                  >
                     Learn More
                   </Button>
                 </Link>
               </div>
             </div>
-            <div className="flex items-center justify-center">
-            </div>
           </div>
         </div>
       </section>
+
       <ContactBox />
     </div>
   )

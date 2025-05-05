@@ -498,7 +498,7 @@ export default function Services() {
       </div>
 
       <section className="py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-10xl mx-auto text-center bg-gradient-to-r from-[#0371BC] to-[#128DBB] rounded-2xl p-8 sm:p-12">
+      <div className="max-w-10xl mx-auto text-center bg-gradient-to-r from-[#002f4b] to-[#005f6b] rounded-2xl p-8 sm:p-12">
         <h2 className="text-3xl sm:text-4xl font-bold text-white leading-snug mb-4">
           Ready to Transform Your Business?
         </h2>
