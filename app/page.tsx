@@ -13,41 +13,7 @@ import ContactBox from "@/components/contactBox"
 export default function Home() {
   return (
     <div className="flex flex-col min-h-scree">
-      {/* Hero Section */}
       
-      <section className="relative z-10 w-full py-14 md:py-48 bg-gradient-to-b from-blue-50 to-white">
-        <BackgroundAnimation />
-        <div className="container px-4 md:px-6">
-          <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-4xl lg:text-5xl/2 xl:text-5xl/none   text-black">
-                  Innovating Tommorrow, Today !
-                </h1>
-                <p className="max-w-[600px] text-gray-600 md:text-xl">
-                  Empowering your digital journey with Global Pearl Ventures<br />
-                  Where Innovation meets Excellence.
-                </p>
-              </div>
-              <div className="flex flex-col-2 gap-4 min-[400px]:flex-row">
-                <Link href="/get-in-touch">
-                  <Button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-teal-700 text-white transition-colors duration-300 ease-in-out">
-                    Get Started
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-                <Link href="/our-services">
-                  <Button variant="outline" className="border-blue-200 text-blue-600 transition-colors duration-300 ease-in-out">
-                    Learn More
-                  </Button>
-                </Link>
-              </div>
-            </div>
-            <div className="flex items-center justify-center">
-          </div>
-          </div>
-        </div>
-      </section>
 
       {/* Services Section */}
       <section className="w-full py-2 md:py-3 lg:py-24 bg-white" id="services">
@@ -176,6 +142,42 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hero Section */}
+      
+      <section className="relative z-10 w-full py-14 md:py-40 bg-gradient-to-b from-blue-50 to-white">
+        <BackgroundAnimation />
+        <div className="container px-4 md:px-6">
+          <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
+            <div className="flex flex-col justify-center space-y-4">
+              <div className="space-y-2">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-4xl lg:text-5xl/2 xl:text-5xl/none   text-black">
+                  Innovating Tommorrow, Today !
+                </h1>
+                <p className="max-w-[600px] text-gray-600 md:text-xl">
+                  Empowering your digital journey with Global Pearl Ventures<br />
+                  Where Innovation meets Excellence.
+                </p>
+              </div>
+              <div className="flex flex-col-2 gap-4 min-[400px]:flex-row">
+                <Link href="/get-in-touch">
+                  <Button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-teal-700 text-white transition-colors duration-300 ease-in-out">
+                    Get Started
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+                <Link href="/our-services">
+                  <Button variant="outline" className="border-blue-200 text-blue-600 transition-colors duration-300 ease-in-out">
+                    Learn More
+                  </Button>
+                </Link>
+              </div>
+            </div>
+            <div className="flex items-center justify-center">
+          </div>
           </div>
         </div>
       </section>

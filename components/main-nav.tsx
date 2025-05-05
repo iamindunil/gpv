@@ -29,12 +29,12 @@ export function MainNav() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-gradient-to-b from-blue-50 via-emerald-50 to-white">
-      <div className="container flex h-16 items-center justify-between px-4">
+      <div className="container flex h-20 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
           <img
             src={image}
             alt="logo"
-            className="h-10 w-10 sm:h-14 sm:w-14 md:h-12 md:w-12 lg:h-12 lg:w-12"
+            className="h-14 w-14 sm:h-14 sm:w-14 md:h-16 md:w-16 lg:h-16 lg:w-16"
           />
         </Link>
 
@@ -46,9 +46,9 @@ export function MainNav() {
               className="md:hidden p-5 flex items-center justify-center min-h-[64px] min-w-[64px]"
             >
               {isMenuOpen ? (
-                <X className="h-12 w-12" />
+                <X className="h-16 w-16" />
               ) : (
-                <Menu className="h-12 w-12" />
+                <Menu className="h-16 w-16" />
               )}
             </Button>
 
@@ -89,7 +89,7 @@ export function MainNav() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-blue-600",
+                  "text-md font-medium transition-colors hover:text-blue-600",
                   pathname === item.href
                     ? "text-blue-600 underline underline-offset-4 decoration-2"
                     : "text-gray-600"
@@ -99,7 +99,7 @@ export function MainNav() {
               </Link>
             ))}
             <Link href="/get-in-touch">
-              <Button className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white">
+              <Button className="h-10 text-md w-auto bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white">
                 Get in Touch
               </Button>
             </Link>
