@@ -42,15 +42,15 @@ export function MainNav() {
 
         {isMobile ? (
           <>
-            <Button
-              variant="ghost"
-              onClick={toggleMenu}
-              className="md:hidden p-5 flex items-center justify-center min-h-[64px] min-w-[64px]"
+            <Button 
+              variant="ghost" 
+              onClick={toggleMenu} 
+              className="md:hidden flex items-center justify-center min-h-[56px] min-w-[56px] p-0 m-0"
             >
               {isMenuOpen ? (
-                <CrossIcon/>
+                <CrossIcon />
               ) : (
-                <HamburgerMenu/>
+                <HamburgerMenu />
               )}
             </Button>
 
