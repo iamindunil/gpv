@@ -14,7 +14,8 @@ import { useEffect, useState } from "react"
 const images = [
   "/about_us_hero.png",
   "/ai_ml.png",
-  "/cloud_and_devops.png",
+  "/web_dev.png",
+  "/mobile_app_dev.png",
 ]
 
 
@@ -42,16 +43,16 @@ export default function Home() {
         }}
       >
         {/* Blur Overlay */}
-        <div className="absolute inset-0 bg-white/30 backdrop-blur-sm z-0" />
+        <div className="absolute inset-0 bg-blue/50 backdrop-blur-sm z-0" />
 
         {/* Main content (above overlay) */}
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2 sm:space-y-3 md:space-y-4">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-blue-900">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tighter text-white">
                 Comprehensive Software Solutions
               </h2>
-              <p className="max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[900px] mx-auto text-sm sm:text-base md:text-lg lg:text-xl text-gray-600">
+              <p className="max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[900px] mx-auto text-sm sm:text-base md:text-lg lg:text-xl text-white/90">
                 We offer a wide range of services to help your business succeed in the digital world.
               </p>
             </div>

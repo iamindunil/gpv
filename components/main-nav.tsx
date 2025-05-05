@@ -8,6 +8,8 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { useMobile } from "@/hooks/use-mobile";
 import Image from "next/image";
+import { CrossIcon } from "./cross";
+import { HamburgerMenu } from "./hamburger";
 
 export function MainNav() {
   const pathname = usePathname();
@@ -46,9 +48,9 @@ export function MainNav() {
               className="md:hidden p-5 flex items-center justify-center min-h-[64px] min-w-[64px]"
             >
               {isMenuOpen ? (
-                <X className="h-16 w-16" />
+                <CrossIcon/>
               ) : (
-                <Menu className="h-16 w-16" />
+                <HamburgerMenu/>
               )}
             </Button>
 
