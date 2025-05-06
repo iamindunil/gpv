@@ -179,8 +179,7 @@ export default function Home() {
       </section>
 
       {/* Hero Section */}
-
-      <section className="relative z-10 w-full py-14 md:py-40 bg-gradient-to-b from-blue-50 to-white">
+      <section className="relative z-0 w-full py-14 md:py-40 bg-gradient-to-b from-blue-50 to-white">
         <BackgroundAnimation />
         <div className="container px-4 md:px-6">
           <div className="flex justify-center">
