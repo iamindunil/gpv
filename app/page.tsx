@@ -11,13 +11,21 @@ import Image from "next/image"
 import ContactBox from "@/components/contactBox"
 import { useEffect, useState } from "react"
 
+import teamCollabImage from "./../public/Team_collaboration.png";
+import aboutUsImage from "./../public/about_us_hero.png";
+import aimlImage from "./../public/ai_ml.png";
+import webDevImage from "./../public/web_dev.png";
+import mobileAppDevImage from "./../public/mobile_app_dev.png";
+import cloudImage from "./../public/cloud_and_devops.png";
+
+
 const images = [
-  "/Team_collaboration.png",
-  "/about_us_hero.png",
-  "/ai_ml.png",
-  "/web_dev.png",
-  "/mobile_app_dev.png",
-  "/cloud_and_devops.png"
+  teamCollabImage,
+  aboutUsImage,
+  aimlImage,
+  webDevImage,
+  mobileAppDevImage,
+  cloudImage
 ]
 
 
@@ -41,7 +49,7 @@ export default function Home() {
         className="w-full py-8 sm:py-12 md:py-16 lg:py-24 bg-cover bg-center transition-all duration-1000 ease-in-out relative"
         id="services"
         style={{
-          backgroundImage: `url(${images[currentImage]})`,
+          backgroundImage: `url(${images[currentImage].src})`,
         }}
       >
         {/* Blur Overlay */}
