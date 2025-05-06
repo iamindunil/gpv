@@ -12,10 +12,12 @@ import ContactBox from "@/components/contactBox"
 import { useEffect, useState } from "react"
 
 const images = [
+  "/Team_collaboration.png",
   "/about_us_hero.png",
   "/ai_ml.png",
   "/web_dev.png",
   "/mobile_app_dev.png",
+  "/cloud_and_devops.png"
 ]
 
 
