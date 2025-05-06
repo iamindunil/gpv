@@ -226,6 +226,12 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="hidden">
+        {images.map((img, index) => (
+          <img key={index} src={img.src} alt={`Preload ${index}`} />
+        ))}
+      </div>
+
       <ContactBox />
     </div>
   )
