@@ -27,6 +27,8 @@ export function MainNav() {
 
   const image = '/Logo-v7.png';
 
+  const normalizePath = (path: string) => path.replace(/\/+$/, '') || '/';
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-gradient-to-b from-blue-50 via-emerald-50 to-white">
       <div className="container flex h-20 items-center justify-between px-0 md:px-0">
@@ -44,9 +46,9 @@ export function MainNav() {
         {/* Mobile view */}
         {isMobile ? (
           <>
-            <Button 
-              variant="ghost" 
-              onClick={toggleMenu} 
+            <Button
+              variant="ghost"
+              onClick={toggleMenu}
               className="md:hidden flex items-center justify-center min-h-[56px] min-w-[56px] p-0 m-0"
             >
               {isMenuOpen ? (
@@ -64,12 +66,11 @@ export function MainNav() {
                       key={item.href}
                       href={item.href}
                       className={cn(
-                        "text-sm font-medium transition-colors hover:text-blue-600",
-                        pathname === item.href
-                          ? "text-blue-600"
+                        "text-md font-medium transition-colors hover:text-blue-600",
+                        normalizePath(pathname) === normalizePath(item.href)
+                          ? "text-blue-600 underline underline-offset-4 decoration-2"
                           : "text-gray-600"
                       )}
-                      onClick={() => setIsMenuOpen(false)}
                     >
                       {item.label}
                     </Link>
@@ -94,7 +95,7 @@ export function MainNav() {
                 href={item.href}
                 className={cn(
                   "text-md font-medium transition-colors hover:text-blue-600",
-                  pathname === item.href
+                  normalizePath(pathname) === normalizePath(item.href)
                     ? "text-blue-600 underline underline-offset-4 decoration-2"
                     : "text-gray-600"
                 )}

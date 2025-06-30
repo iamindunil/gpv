@@ -28,7 +28,8 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
-  output: 'export',  // Static export configuration
+  output: 'export',
+  trailingSlash: true,
 };
 
 // Merge user custom config (if any)
